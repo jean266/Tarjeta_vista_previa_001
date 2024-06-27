@@ -37,7 +37,7 @@ Los usuarios deberían poder:
 ### Enlaces
 
 - URL de la solución: [Github](https://github.com/jean266/Tarjeta_vista_previa_001.git)
-- URL del sitio en vivo: [Vercel]()
+- URL del sitio en vivo: [Vercel](https://tarjeta-vista-previa-001.vercel.app/)
   
 ## Mi proceso
 
