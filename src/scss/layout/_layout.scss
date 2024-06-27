@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.container_main {
+    margin: 15rem auto;
+    width: 90%;
+    background-color: v.$white;
+    border-radius: 1.5rem;
+    border: 1px solid v.$black;
+    padding: 2rem;
+    box-shadow: 7px 7px 0px 0px v.$black;
+    
+    @include m.tablet {
+        max-width: 38rem;
+        margin: 5rem 0;
+        box-shadow: 9px 9px 0px 0px v.$black;
+    }
+
+    .illustration {
+        
+        img {
+            border-radius: 1rem;
+        }
+    }
+    
+    p {
+        margin: 0;
+        font-size: 1.4rem;
+
+        @include m.tablet {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.info {
+    margin-top: 2rem;
+
+    .info_tag {
+        display: inline-block;
+        background-color: v.$yellow;
+        padding: .6rem 1.4rem;
+        border-radius: .5rem;
+        font-weight: 800;
+    }
+
+    .info_date {
+        margin-top: 2rem;
+    }
+
+    .info_title {
+        font-weight: 800;
+        font-size: 2rem;
+        text-align: start;
+        margin: 2rem 0;
+
+        &:hover {
+            color: v.$yellow;
+            cursor: pointer;
+        }
+
+        @include m.tablet {
+            font-size: 2.2rem;
+        }
+    }
+
+    .info_description {
+        color: v.$grey;
+        line-height: 1.4;
+        font-size: 1.5rem;
+
+        @include m.tablet {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.creator {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2.5rem;
+    
+    .creator_img {
+        width: 3.5rem;
+    }
+
+    .creator_name {
+        font-weight: 800;
+        
+        @include m.tablet {
+            font-size: 1.6rem;
+        }
+    }
+}
